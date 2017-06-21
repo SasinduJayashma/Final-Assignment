@@ -1,0 +1,79 @@
+<html>
+<head></head>
+<body bgcolor="#294072">
+  <table>
+    <tr style="height:80px">
+      <td width="33.3%"></td>
+      <td width="8.325%"></td>
+      <td width="8.325%"></td>
+      <td width="16.65%"></td>
+      <td width="33.3%"></td>
+    </tr>
+    <!--Sign In Row-->
+    <tr style="height:20px">
+      <td></td>
+      <td colspan="3" align="center" bgcolor="#17233b" bordercolor="#17233b">
+        <font size="6" color="white" font face="verdana">Sign In</font>
+      </td>
+      <td></td>
+    </tr>
+      <!--Enter UserName-->
+    <tr style="height:20px">
+      <td></td>
+      <td align="center" bgcolor="#1c2b4a" height="50">
+        <img src="us.png" height="30" width="30"></td>
+      <td colspan="2" bgcolor="#1c2b4a" align="center" >
+        <input type="text" placeholder=" Enter Username" name="username" required="required"
+        style="height:35px; width:300px; font-size: 20px; background-color:#12192c; border:none; color:white">
+      </td>
+      <td></td>
+    </tr >
+      <!--Enter PassWord-->
+    <tr style="height:20px">
+      <td></td>
+      <td align="center" bgcolor="#1c2b4a" height="50">
+        <img src="pass.png" height="30" width="30">
+      </td>
+      <td colspan="2" bgcolor="#1c2b4a" align="center" >
+        <input type="password" placeholder=" Password" name="pass" required="required"
+         style="height:35px; width:300px; font-size: 20px; background-color:#12192c; border:none; color:white">
+      </td>
+      <td></td>
+    </tr>
+      <!--Submit Button-->
+    <tr style="height:20px">
+      <td></td>
+      <td colspan="3" align="center" bgcolor="#1c2b4a" height="50">
+        <button onclick="checkUserPass(this.form)"
+          style="height:35px; width:200px; font-size: 20px; background-color: #00cc66; color:white">Submit
+        </button>
+          <script>
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("pass").value;
+            document.write(username);
+            function checkUserPass(form){
+              if(form.username.value=="sasindu" && form.pass.value="123"){
+                document.write("Welcome!");
+              }else{
+                document.write("fuck off");
+              }
+            }
+          </script>
+      </td>
+      <td></td>
+      <td></td>
+    </tr>
+      <!--Remember Me and Forget Your Password-->
+    <tr style="height:20px">
+      <td></td>
+      <td colspan="2" align="center" bgcolor="#1c2b4a">
+          <input type="checkbox"> <font size="2" color="white" font face="verdana">Remember Me!</font>
+      </td>
+      <td align="center" bgcolor="#1c2b4a">
+        <a href=""><font size="2" color="white" font face="verdana">Forget Your Password?</font>
+        </td>
+    </tr>
+  </table>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>All Right Reserved By Sasindu Jayashma! :D
+</body>
+</html>
